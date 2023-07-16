@@ -110,6 +110,7 @@ width: 100%;
   gap: 10px;
 }
 .icone-all {
+  flex-wrap: wrap;
   display: flex;
   gap: 10px;
 }
@@ -138,6 +139,7 @@ width: 100%;
     background-color:#ffbb00 !important;
 }
 .page-center-block {
+  width: 150px;
   align-items: center;
   padding: 8px 0px;
   display: flex;
@@ -149,7 +151,9 @@ width: 100%;
 .page-center-block p {
   opacity: 0.5;
 }
+
 a {
+  cursor: pointer;
   color: black;
   text-decoration: none;
 }
@@ -181,6 +185,9 @@ a {
     background-color: red;
     color: white;
 }
+.page-left-a-tag{
+  width: 120px;
+}
 
 
 
@@ -190,6 +197,7 @@ aside{
     margin: 50px 0px;
     width: 100%;
     height: auto;
+    background-position: center;
     background-image: url("./assets/images/calltoaction.png");
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.744);
@@ -257,6 +265,7 @@ main{
     text-align: center;
 }
 .main-block{
+    flex-wrap: wrap;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -301,6 +310,9 @@ main{
     right: 42%;
     height: 2px;
   }
+  .main-page-left img{
+    width: 100%;
+  }
   .container-bottom{
     gap: 20px;
     padding: 50px 0px;
@@ -335,4 +347,52 @@ main{
 .main-right-a-tag:hover{
     transition: .7s;
     background-color: #f46595;
+}
+.main-page-right{
+  width:100%;
+  max-width: 500px;
+}
+
+@media(max-width:1150px){
+  .container-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .section-container-block img{
+    display: none;
+  }
+  .main-block{
+    display: flex;
+    gap: 20px;
+  }
+}
+@media(max-width:700px){
+
+  .aside-container h2 {
+    font-size: 2rem;
+  }
+  .section-block-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .aside-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aside-container h3 {
+    text-align: center;
+    width: 300px;
+    font-size: 1.5rem;
+  }
+  .main-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
