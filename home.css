@@ -148,3 +148,33 @@ a{
     top: 0;
     left: 0;
   }
+  @media(max-width:850px){
+    .container-right{
+        display: none;
+    }
+    .contrainer-left{
+        display: none;
+    }
+    .middle{
+        width: 70%;
+    }
+  }
+  @media(max-width:600px){
+    .middle-main-container-bottom{
+        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .middle-main-container{
+        display: block;
+    }
+    .middle-block-2{
+        padding-top:20px ;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .middle-block-2 a{
+       width: 150px;
+    }
+  }
